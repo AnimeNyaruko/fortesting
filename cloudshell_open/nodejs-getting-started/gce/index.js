@@ -1,3 +1,5 @@
+'use strict';
+
 const express = require('express');
 const path = require('path');
 const fs = require("fs");
@@ -40,3 +42,5 @@ async function DataHandler(items, data, date) {
 
   console.log("New data has been appended to data.json");
 }
+
+module.exports = app;
